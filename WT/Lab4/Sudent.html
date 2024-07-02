@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        students = [
+  {
+    "name": "Nora Leuschke",
+    "Enrollno": "1-912-612-9208",
+    "Course": "bandwidth-index",
+    "result": 21623,
+    "id": "1"
+  },
+  {
+    "name": "Louise Schulist",
+    "Enrollno": "495-754-0947 x427",
+    "Course": "microchip-reboot",
+    "result": 24822,
+    "id": "2"
+  },
+  {
+    "name": "Daryl Bayer",
+    "Enrollno": "627.381.4129",
+    "Course": "hard-drive-transmit",
+    "result": 78136,
+    "id": "3"
+  },
+  {
+    "name": "Dr. Mike Mills",
+    "Enrollno": "(838) 555-1653 x2478",
+    "Course": "alarm-reboot",
+    "result": 24625,
+    "id": "4"
+  },
+  {
+    "name": "Miss Mandy Predovic",
+    "Enrollno": "989-857-6436",
+    "Course": "microchip-calculate",
+    "result": 32217,
+    "id": "5"
+  }
+]
+document.write("<table border=1>");
+    for(i=0;i<students.length;i++){
+        document.write("<tr>");
+            document.write("<td>");
+                document.write(students[i].name);
+                document.write("</td>");
+                
+                document.write("<td>");
+                document.write(students[i].Enrollno);
+                document.write("</td>");
+
+                document.write("<td>");
+                document.write(students[i].Course);
+                document.write("</td>");
+
+                document.write("<td>");
+                document.write(students[i].result);
+                document.write("</td>");
+
+                document.write("<td>");
+                document.write(students[i].id);
+                document.write("</td>");
+
+                document.write("</tr>");
+    }
+    document.write("</table>");
+    </script>
+</body>
+</html>

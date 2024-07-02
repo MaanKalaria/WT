@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        faculties = [
+            {
+                "Name": "Karen Kiehn",
+                "Subject": "pollutant",
+                "Phno": "(423) 854-2680 x72177",
+                "Email": "Thaddeus.Dooley@yahoo.com",
+                "id": "1"
+            },
+            {
+                "Name": "Christine Blanda",
+                "Subject": "Leesburg",
+                "Phno": "311-807-7508 x17203",
+                "Email": "Alexandro_West44@hotmail.com",
+                "id": "2"
+            },
+            {
+                "Name": "Sidney Boehm",
+                "Subject": "Specialist",
+                "Phno": "(224) 834-1290 x9313",
+                "Email": "Dejuan_Schumm15@hotmail.com",
+                "id": "3"
+            },
+            {
+                "Name": "David Fahey",
+                "Subject": "Southwest",
+                "Phno": "1-801-437-7360 x975",
+                "Email": "Natalie.Reilly71@gmail.com",
+                "id": "4"
+            },
+            {
+                "Name": "Billy Deckow",
+                "Subject": "red",
+                "Phno": "695.604.6114 x8761",
+                "Email": "Greta_Jast89@gmail.com",
+                "id": "5"
+            }
+        ]
+        document.write("<table border = 1>");
+        for (i = 0; i < faculties.length; i++) {
+            document.write("<tr>")
+                document.write("<td>")
+                document.write(faculties[i].Name)
+                document.write("</td>")
+                document.write("<td>")
+                document.write(faculties[i].Subject)
+                document.write("</td>")
+                document.write("<td>")
+                document.write(faculties[i].Phno)
+                document.write("</td>")
+                document.write("<td>")
+                document.write(faculties[i].Email)
+                document.write("</td>")
+                document.write("<td>")
+                document.write(faculties[i].id)
+                document.write("</td>")
+                
+            document.write("</tr>")
+        }
+        document.write("</table>")
+    </script>
+</body>
+
+</html>

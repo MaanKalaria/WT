@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [5]
+        for (i = 0; i < arr.length; i++) {
+            console.log(arr[i])
+        }
+        a=arr.push()
+        console.log("push", arr)
+        a = arr.pop()
+        console.log("Pop", arr, a)
+        arr.shift()
+        console.log("Shift", arr)
+        arr.unshift(4)
+        console.log("Unshift", arr)
+        new_arr = arr.slice(0, 3)
+        console.log("slice", new_arr)
+        arr.splice(0, 3)
+        console.log("splice", arr)
+        arr.push(5,6,2,4,1)
+        arr.sort()
+    </script>
+</body>
+
+</html>

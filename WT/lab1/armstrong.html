@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a=parseInt(prompt("Enetr a number: "));
+        b=a;
+        count=0;
+        d=a;
+        while(a>0){
+            count++;
+            a=parseInt(a/10);
+        }
+        sum=0;
+        while(b>0){
+            temp=b%10;
+            sum+=Math.pow(temp,count);
+            b=parseInt(b/10);
+        }
+        if(sum==d){
+            document.write("Number is an Armstrong Number.");
+        }
+        else{
+            document.write("Number is not an Armstrong Number.");            
+        }
+    </script>
+</body>
+</html>

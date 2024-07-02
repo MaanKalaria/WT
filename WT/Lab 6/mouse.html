@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <h4 id="abc">mouse event:</h4>
+    <script>
+    let h = document.getElementById("abc");
+    function display(name) {
+        h.innerText = "mouse event: " + name;
+    }
+    function displaykey(name) {
+        h.innerText = "key event: " + name;
+    }
+    document.addEventListener("click", function () {
+        display(" click");
+    });
+    document.addEventListener("dblclick", function () {
+        display(" double click ");
+    });
+    document.addEventListener("mouseout", function () {
+        display(" mouse out");
+    });
+    document.addEventListener("keydown", function (event) {
+        displaykey(event.key);
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a = prompt("Enter a number between 0 and 999: ");
+        if(a == null || a < 0 || a > 999){
+            document.write("enter a valid number!");
+        }
+        else{
+            first = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+            teen = ['ten', 'eleven','twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen','seventeen','eighteen','ninteen'];
+            ten = ['twenty', 'thirty', 'fourty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety', 'hundred'];
+        }
+        result = "";
+        if(a>=100){
+            result += first[Math.floor(a/100)] + 'hundred';
+            a = a%100;
+        }
+        else if(a>=20){
+            result += ten[Math.floor(a/10)]
+            a = a%10;
+        }
+        else if(a<20){
+            result += first[Math.floor(a) - 2]
+        }
+        document.write(result);
+    </script>
+</body>
+</html>

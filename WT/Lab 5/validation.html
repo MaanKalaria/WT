@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <input type="text" id="name" placeholder="NAME"><br><br>
+    <input type="password" id="pass" placeholder="PASSWORD"><br><br>
+    <input type="password" id="re-pass" placeholder="RE-PASSWORD"><br><br>
+    <input type="number" id="age" placeholder="AGE"><br><br>
+    <input type="number" id="enroll" placeholder="ENROLLMENT NO."><br><br>
+    <input type="email" id="email" placeholder="EMAIL"><br><br>
+    <button type="submit" onclick="validation()">submit</button>
+    </form>
+    <script>
+        let name = document.getElementById("name");
+        let password = document.getElementById("pass");
+        let re_password = document.getElementById("re-password");
+        let age = document.getElementById("age");
+        let enroll = document.getElementById("enroll");
+        let email = document.getElementById("email");
+        document.addEventListener('submit', (event) =>{
+            event.preventDefault();
+            validation();
+        })
+        let pattern = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+        let regex = new RegExp(pattern); 
+        function validation(){
+            if(!(name.value.length > 8)){
+            alert("small name");
+        }
+        else if(password.value.length < 8 || password.value.length > 12){
+            alert("Password must be between 8 and 12 characters");
+        }
+        else if(!(re_password.value = password.value)){
+            alert("Password did not match");
+        }
+    }
+    </script>
+</body>
+</html>

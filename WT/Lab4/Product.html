@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        products = [
+  {
+    "name": "Laurence Rosenbaum",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/517.jpg",
+    "price": "581.00",
+    "weight": 49513,
+    "company": "Emard - Crona",
+    "expiry": 57227,
+    "id": "1"
+  },
+  {
+    "name": "Brandy Greenfelder",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/715.jpg",
+    "price": "11.00",
+    "weight": 51700,
+    "company": "Rutherford - Vandervort",
+    "expiry": 41618,
+    "id": "2"
+  },
+  {
+    "name": "Dale Von",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/113.jpg",
+    "price": "400.00",
+    "weight": 85390,
+    "company": "Tremblay Group",
+    "expiry": 69074,
+    "id": "3"
+  },
+  {
+    "name": "Jesse Walker",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/5.jpg",
+    "price": "818.00",
+    "weight": 7054,
+    "company": "Gulgowski and Sons",
+    "expiry": 55480,
+    "id": "4"
+  },
+  {
+    "name": "Ida Mosciski DVM",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1174.jpg",
+    "price": "310.00",
+    "weight": 24876,
+    "company": "Considine - Zboncak",
+    "expiry": 44979,
+    "id": "5"
+  }
+]
+document.write("<table border=1>");
+    for(i=0;i<products.length;i++){
+        document.write("<tr>");
+            document.write("<td>");
+                document.write(products[i].name);
+                document.write("</td>");
+                
+                document.write("<td>");
+                document.write(products[i].avatar);
+                document.write("</td>");
+
+                document.write("<td>");
+                document.write(products[i].price);
+                document.write("</td>");
+
+                document.write("<td>");
+                document.write(products[i].weight);
+                document.write("</td>");
+
+                document.write("<td>");
+                document.write(products[i].company);
+                document.write("</td>");
+
+                document.write("<td>");
+                document.write(products[i].expiry);
+                document.write("</td>");
+
+                document.write("<td>");
+                document.write(products[i].id);
+                document.write("</td>");
+
+                document.write("</tr>");
+    }
+    document.write("</table>");
+    </script>
+</body>
+</html>
